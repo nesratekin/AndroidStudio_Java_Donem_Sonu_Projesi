@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NormalOyunActivity">
+
+    <TextView
+        android:id="@+id/tvIlBilgiNG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:textColor="#3F51B5"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvIlNG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvIlBilgiNG"
+        app:layout_constraintStart_toStartOf="@+id/tvIlBilgiNG"
+        app:layout_constraintTop_toBottomOf="@+id/tvIlBilgiNG" />
+
+    <EditText
+        android:id="@+id/etTahminNG"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="Tahmininizi Yazın"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvIlBilgiNG"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="@+id/tvIlBilgiNG"
+        app:layout_constraintTop_toBottomOf="@+id/tvIlNG" />
+
+    <Button
+        android:id="@+id/btnHarfAlNG"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:onClick="btnHarfAl"
+        android:text="Harf Al"
+        android:textColor="#CDDC39"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTahminNG" />
+
+    <Button
+        android:id="@+id/btnTahminEtNG"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="btnTahminEt"
+        android:text="Tahmin Et"
+        android:textColor="#FFEB3B"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnHarfAlNG"
+        app:layout_constraintTop_toBottomOf="@+id/etTahminNG" />
+
+    <TextView
+        android:id="@+id/tvDogruSayisiNG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doğru: "
+        android:textColor="#4CAF50"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvIlBilgiNG"
+        app:layout_constraintEnd_toStartOf="@+id/tvYanlisSayisiNG"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <TextView
+        android:id="@+id/tvYanlisSayisiNG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yanlış: "
+        android:textColor="#F44336"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvIlBilgiNG"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.878"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.159" />
+</androidx.constraintlayout.widget.ConstraintLayout>

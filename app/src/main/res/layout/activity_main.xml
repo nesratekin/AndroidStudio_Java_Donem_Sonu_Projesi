@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnNormalOyun"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:onClick="btnNormalOyunBaslat"
+        android:text="Normal Oyun Başlat"
+        android:textSize="19sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twOyunAdi" />
+
+    <Button
+        android:id="@+id/btnSureliOyun"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Süreli Oyun Başlat"
+        android:textSize="19sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/btnNormalOyun"
+        app:layout_constraintStart_toStartOf="@+id/btnNormalOyun"
+        app:layout_constraintTop_toBottomOf="@+id/btnNormalOyun" />
+
+    <Button
+        android:id="@+id/btnOyundanCikis"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Oyundan Çıkış"
+        android:textSize="19sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/btnSureliOyun"
+        app:layout_constraintStart_toStartOf="@+id/btnSureliOyun"
+        app:layout_constraintTop_toBottomOf="@+id/btnSureliOyun" />
+
+    <TextView
+        android:id="@+id/twOyunAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Şehir Tahmin Oyunu"
+        android:textColor="#E91E63"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btnNormalOyun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
